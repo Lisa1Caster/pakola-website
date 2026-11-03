@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pakola Flavoured Milk | Iconic Rose &amp; Strawberry Delight</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#137142",
+            "on-secondary-fixed": "#00210f",
+            "inverse-primary": "#ffb3b1",
+            "surface-container-low": "#fff0f3",
+            "on-background": "#25181c",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#b10024",
+            "on-primary": "#ffffff",
+            "surface-container": "#ffe8ed",
+            "on-primary-fixed": "#410007",
+            "surface-container-high": "#fae2e8",
+            "secondary-fixed-dim": "#83d99f",
+            "tertiary-container": "#8c646f",
+            "surface-variant": "#f4dde2",
+            "tertiary-fixed": "#ffd9e2",
+            "on-error": "#ffffff",
+            "outline-variant": "#e5bdbb",
+            "on-primary-container": "#fff0ef",
+            "outline": "#906f6e",
+            "secondary-container": "#9bf2b7",
+            "primary-fixed": "#ffdad8",
+            "surface-container-highest": "#f4dde2",
+            "inverse-surface": "#3b2d31",
+            "on-tertiary-fixed-variant": "#603d47",
+            "primary-fixed-dim": "#ffb3b1",
+            "error-container": "#ffdad6",
+            "background": "#fff8f8",
+            "on-primary-fixed-variant": "#92001c",
+            "on-surface": "#25181c",
+            "error": "#ba1a1a",
+            "surface-dim": "#ebd4da",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#fff0f2",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#9ef5ba",
+            "on-error-container": "#93000a",
+            "surface": "#fff8f8",
+            "surface-bright": "#fff8f8",
+            "on-tertiary-fixed": "#2f121c",
+            "primary-container": "#d82036",
+            "tertiary": "#724c57",
+            "on-secondary-fixed-variant": "#00522c",
+            "inverse-on-surface": "#ffecf0",
+            "surface-tint": "#bf0128",
+            "on-surface-variant": "#5c3f3f",
+            "tertiary-fixed-dim": "#ebbac7",
+            "secondary": "#0a6d3e"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "margin": "2.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .creamy-glow {
+      box-shadow: 0 16px 40px -8px rgba(216, 32, 54, 0.12), 0 0 0 1px rgba(216, 32, 54, 0.05);
+    }
+    .emerald-glow {
+      box-shadow: 0 14px 32px -6px rgba(10, 109, 62, 0.18);
+    }
+    .product-shadow {
+      filter: drop-shadow(0 20px 24px rgba(177, 0, 36, 0.15)) drop-shadow(0 8px 12px rgba(10, 109, 62, 0.1));
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(1deg); }
+    }
+    .animate-float {
+      animation: floatSlow 5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary">
+<!-- ================= TOP NAV BAR (Shared Component) ================= -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md shadow-[0_8px_24px_-4px_rgba(216,32,54,0.08)]">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+<!-- Logo Identity -->
+<a class="flex items-center gap-3 group" href="#">
+<span class="text-headline-md font-headline-md font-extrabold text-secondary tracking-tight">Pakola</span>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-primary text-label-sm font-label-sm tracking-wide">
+          Flavoured Milk
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg transition-colors" href="#flavours">
+          Flavours
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors font-label-lg text-label-lg" href="#nutrition">
+          Nutrition
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors font-label-lg text-label-lg" href="#heritage">
+          Heritage
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors font-label-lg text-label-lg" href="#find-stores">
+          Find in Stores
+        </a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<span class="hidden lg:inline-flex items-center px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary mr-1.5 animate-pulse"></span>
+          Rose / Strawberry
+        </span>
+<a class="inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-lg text-label-lg font-bold shadow-sm transition-all duration-200 active:scale-[0.98]" href="#shop">
+<span class="material-symbols-outlined text-lg" data-icon="shopping_bag">shopping_bag</span>
+<span>Shop Now</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative pt-8 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-background">
+<!-- Ambient Milk & Strawberry Blobs -->
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-80 h-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<!-- Flavor Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold border border-primary/10">
+<span class="material-symbols-outlined text-base text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span>Rich Creamy Delight • Real Strawberry &amp; Damascus Rose</span>
+</div>
+<!-- Headline -->
+<h1 class="text-headline-xl font-headline-xl text-on-background tracking-tight">
+          Pure Milk. Iconic <span class="text-primary italic">Rose &amp; Strawberry</span> Delight.
+        </h1>
+<!-- Subtitle -->
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Experience the nostalgic taste of Pakistan's most cherished beverage brand, reimagined in silky, nutrient-packed flavoured milk crafted with 100% farm-fresh dairy.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-bold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.98]" href="#flavours">
+            Shop Flavours
+          </a>
+<a class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 border-2 border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg font-bold px-7 py-3 rounded-full transition-all duration-200 active:scale-[0.98]" href="#nutrition">
+<span class="material-symbols-outlined text-lg" data-icon="eco">eco</span>
+<span>Explore Nutrition &amp; Ingredients</span>
+</a>
+</div>
+<!-- Quick Proof Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-surface-container-high w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary font-bold text-xl" data-icon="check_circle">check_circle</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">100% Fresh Dairy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary font-bold text-xl" data-icon="vital_signs">vital_signs</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">Calcium &amp; Vit A+D</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary font-bold text-xl" data-icon="verified">verified</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">No Artificial Preservatives</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary font-bold text-xl" data-icon="history_edu">history_edu</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">Loved Since 1950</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Product Visual with https://lh3.googleusercontent.com/aida-public/AB6AXuBzbYS40oyCw-PwLYynJKGO6IxT7wE2C2elDFPJQaw479m_BLIFIuC4WzM5SButNqWSh_fJQeIHMcohIaUrQQqnTeJ6MPKiUxt4CmEtZTvSVeqqg7Qh9-WnGbmmccv_c4IKV33AGQxlcomLfANdsIi3wORbziixk0OJD_9Hycbmsl-Yu7j1y0J5PyqUlcTOwG26gIQShmHBbrRcOfEhPb6bIf-HBirEoEBZdOf0FerB5l-5beJGrhQknVJbpdBVN3IYLIQ -->
+<div class="lg:col-span-5 flex justify-center relative">
+<div class="relative w-full max-w-sm flex items-center justify-center py-6">
+<!-- Background Concentric Cream Circles -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-surface-container via-surface-container-low to-secondary-container/20 -z-10 scale-95 opacity-80"></div>
+<div class="absolute -inset-4 rounded-full border border-primary/10 -z-10"></div>
+<!-- Pack Image Display -->
+<div class="relative z-10 transition-transform duration-500 hover:scale-105">
+<img alt="Pakola Strawberry Flavoured Milk 235ml Carton" class="h-[430px] md:h-[490px] w-auto object-contain product-shadow animate-float select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzbYS40oyCw-PwLYynJKGO6IxT7wE2C2elDFPJQaw479m_BLIFIuC4WzM5SButNqWSh_fJQeIHMcohIaUrQQqnTeJ6MPKiUxt4CmEtZTvSVeqqg7Qh9-WnGbmmccv_c4IKV33AGQxlcomLfANdsIi3wORbziixk0OJD_9Hycbmsl-Yu7j1y0J5PyqUlcTOwG26gIQShmHBbrRcOfEhPb6bIf-HBirEoEBZdOf0FerB5l-5beJGrhQknVJbpdBVN3IYLIQ"/>
+</div>
+<!-- Floating Badge 1: 100% Real Milk -->
+<div class="absolute top-6 left-0 bg-surface-container-lowest/95 backdrop-blur-md border border-secondary/20 rounded-full px-4 py-2 flex items-center gap-2.5 shadow-md z-20">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary font-bold text-sm" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-secondary font-extrabold uppercase leading-none">100% Real</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant font-medium text-[10px]">Pure Fresh Milk</p>
+</div>
+</div>
+<!-- Floating Badge 2: On-The-Go 235ml -->
+<div class="absolute bottom-10 right-0 bg-surface-container-lowest/95 backdrop-blur-md border border-primary/20 rounded-full px-4 py-2.5 flex items-center gap-2.5 shadow-lg z-20">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base" data-icon="local_mall">local_mall</span>
+</div>
+<div class="text-left">
+<span class="block text-label-md font-label-md text-primary font-bold">235 ml Pack</span>
+<span class="block text-label-sm font-label-sm text-on-surface-variant text-[10px]">Ready to Drink</span>
+</div>
+</div>
+<!-- Floating Badge 3: Chilled Recommendation -->
+<div class="absolute top-1/2 -right-4 bg-secondary/90 text-on-secondary px-3 py-1.5 rounded-full text-label-sm font-label-sm font-bold shadow flex items-center gap-1 z-20">
+<span class="material-symbols-outlined text-sm" data-icon="ac_unit">ac_unit</span>
+<span>Serve Chilled 4°C</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= FLAVOUR SPOTLIGHT & SENSORY PROFILE ================= -->
+<section class="py-20 bg-surface-container-lowest relative" id="flavours">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+          The Sensory Experience
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-background mt-3">
+          Tasting Notes Crafted by Master Blenders
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">
+          Every sip unlocks harmonious layers of real strawberry juice, exquisite fragrant rose extract, and wholesome velvety dairy milk.
+        </p>
+</div>
+<!-- Bento Sensory Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Sensory Card 1: Top Notes -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between border border-primary/10 hover:border-primary/30 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="nature">nature</span>
+</div>
+<span class="text-label-sm font-label-sm font-bold text-primary uppercase tracking-wider">Top Note • Fragrant Aroma</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2 mb-3">Damascus Rose Essence</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Gentle floral bouquets that instantly uplift the senses. Infused with natural botanical extracts for an unmistakably authentic aroma that feels celebratory and royal.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">Intensity: Delicate &amp; Floral</span>
+<span class="material-symbols-outlined text-primary text-base" data-icon="spa">spa</span>
+</div>
+</div>
+<!-- Sensory Card 2: Heart Notes (Highlighted Feature) -->
+<div class="bg-surface-container rounded-xl p-8 flex flex-col justify-between border-2 border-primary/20 shadow-lg relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="nutrition">nutrition</span>
+</div>
+<span class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider">Heart Note • Juicy Burst</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2 mb-3">Sun-Ripened Strawberry</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Luscious orchard strawberries picked at peak ripeness deliver a zesty, sweet tanginess. Balancing seamlessly with the floral rose for pure refreshment.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary font-bold">100% Real Fruit Extracts</span>
+<span class="material-symbols-outlined text-secondary text-base" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Sensory Card 3: Base Notes -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between border border-primary/10 hover:border-primary/30 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="liquor">liquor</span>
+</div>
+<span class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider">Base Note • Creamy Finish</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2 mb-3">Pure Dairy Full-Cream Finish</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Ultra-smooth, velvety milk texture that coats the palate gracefully. Sourced from grass-fed certified regional dairy farms for rich, lingering nutrition.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">Texture: Silky Smooth</span>
+<span class="material-symbols-outlined text-secondary text-base" data-icon="favorite">favorite</span>
+</div>
+</div>
+</div>
+<!-- Quick Serve Banner -->
+<div class="mt-12 bg-gradient-to-r from-secondary/10 via-surface-container to-primary/10 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-surface-container-lowest rounded-full text-secondary shadow-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="ac_unit">ac_unit</span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface">The Best Way to Enjoy</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Shake gently, serve ice-cold at 4°C, or pour over crushed ice for a summer milkshake twist!</p>
+</div>
+</div>
+<a class="px-6 py-2.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md font-bold whitespace-nowrap hover:opacity-95 transition-all" href="#find-stores">
+          Find A Cold Pack Near You
+        </a>
+</div>
+</div>
+</section>
+<!-- ================= NUTRITIONAL GOODNESS & QUALITY ================= -->
+<section class="py-20 bg-background relative border-t border-surface-container-high/60" id="nutrition">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="px-4 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+          Wholesome Vitality
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-background mt-3">
+          Fueling Your Active Day With Essential Nutrients
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">
+          Pakola Flavoured Milk combines playful indulgence with fundamental dairy nourishment for kids, students, and active families.
+        </p>
+</div>
+<!-- 4-Column Feature Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Metric Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-surface-container-high hover:border-primary/30 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="fitness_center">fitness_center</span>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-primary">6.5g</span>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface mt-1">High Quality Protein</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Naturally occurring whey and casein protein to support muscle growth, sustained morning energy, and active recovery.
+          </p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-surface-container-high hover:border-secondary/30 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="bone">format_h4</span>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-secondary">28% RDA</span>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface mt-1">Bio-Available Calcium</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Strengthens bones and teeth naturally. Sourced directly from fresh dairy for optimal bioavailability and absorption.
+          </p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-surface-container-high hover:border-primary/30 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-primary">Vitamins A &amp; D</span>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface mt-1">Fortified Formula</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Fortified to help boost daily immunity and assist superior calcium uptake for healthy growing bodies.
+          </p>
+</div>
+<!-- Metric Card 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-surface-container-high hover:border-secondary/30 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="shield">shield</span>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-secondary">0%</span>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface mt-1">Added Preservatives</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Aseptic modern UHT packaging keeps each 235ml carton perfectly wholesome and fresh without chemical preservatives.
+          </p>
+</div>
+</div>
+<!-- Nutrition Facts Table / Spec Drawer -->
+<div class="mt-12 bg-surface-container-lowest rounded-xl p-8 border border-surface-container-high shadow-sm max-w-4xl mx-auto">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-surface-container-high gap-4">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Nutritional Information (Per 235ml Serving)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Standard reference intake for an average adult energy requirement (2,000 kcal)</p>
+</div>
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+            Certified Halal &amp; ISO 22000
+          </span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 border-b border-surface-container-high">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Energy</span>
+<p class="text-headline-sm font-headline-sm text-primary font-bold">172 kcal</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Total Fat</span>
+<p class="text-headline-sm font-headline-sm text-on-surface font-bold">4.8 g</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Carbohydrates</span>
+<p class="text-headline-sm font-headline-sm text-on-surface font-bold">25.5 g</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Dietary Calcium</span>
+<p class="text-headline-sm font-headline-sm text-secondary font-bold">260 mg</p>
+</div>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant gap-2">
+<span>* Ingredients: Standardized Fresh Cow/Buffalo Milk, Sugar, Permitted Stabilizers, Nature-Identical Flavours (Rose &amp; Strawberry), Food Colours.</span>
+<span class="text-label-sm font-label-sm font-bold text-primary cursor-pointer hover:underline">Download Spec Sheet PDF</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= HERITAGE & NOSTALGIA SECTION ================= -->
+<section class="py-20 bg-surface-container-low relative overflow-hidden" id="heritage">
+<!-- Ambient Green Background Aura -->
+<div class="absolute -right-32 top-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Story Narrative -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm" data-icon="flag">flag</span>
+<span>National Heritage Since 14th August 1950</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-background">
+            70+ Years of Refreshing Generations
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Pakola made history on Pakistan's very first Independence anniversary celebrations in 1950 with its legendary green soda. For over seven decades, our distinctive flavours have brought families together across dinner tables, cricket victories, and festive weddings.
+          </p>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Today, our dairy innovations continue this legacy. We infuse that same celebrated pride into nutritious, grab-and-go flavoured milks that fit modern lifestyles while preserving the comforting flavours you grew up loving.
+          </p>
+<!-- Milestone Badges -->
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest/80 border border-primary/10">
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm font-bold mt-0.5">1950</span>
+<div>
+<h5 class="text-label-lg font-label-lg font-bold text-on-surface">The Birth of an Icon</h5>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Launched at Lawrence Road Karachi, instantly becoming the patriotic beverage of the country.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest/80 border border-primary/10">
+<span class="px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm font-bold mt-0.5">2006</span>
+<div>
+<h5 class="text-label-lg font-label-lg font-bold text-on-surface">Pioneering Flavoured Dairy</h5>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Introduced aseptic pure dairy cartons including the legendary Ice Cream Soda, Rose, and Strawberry.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest/80 border border-primary/10">
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm font-bold mt-0.5">Today</span>
+<div>
+<h5 class="text-label-lg font-label-lg font-bold text-on-surface">Exported to 20+ Countries</h5>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Sharing authentic Pakistani flavor nostalgia with communities globally across North America, UK, and the Middle East.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Modern Visual Composition -->
+<div class="lg:col-span-6 relative">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-primary/15 shadow-xl relative">
+<div class="flex items-center justify-between mb-8 pb-4 border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<span class="text-headline-sm font-headline-sm font-extrabold text-secondary">Pakola</span>
+<span class="text-label-sm font-label-sm px-2.5 py-1 bg-surface-container text-primary rounded-full font-bold">Dairy Heritage</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="stars">stars</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="p-4 rounded-lg bg-surface-container-low text-center">
+<span class="text-headline-md font-headline-md font-extrabold text-primary">500M+</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant font-medium mt-1">Smiles Refreshed</p>
+</div>
+<div class="p-4 rounded-lg bg-secondary-container/50 text-center">
+<span class="text-headline-md font-headline-md font-extrabold text-secondary">24+</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant font-medium mt-1">Export Destinations</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-lg text-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="verified_user">verified_user</span>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface">Our Quality Pledge</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                "To always serve uncompromised purity, celebrate indigenous taste, and support our local dairy farmers."
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CONSUMER LOVE & REVIEWS ================= -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="px-4 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+          Community Voices
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-background mt-3">
+          Loved by Kids, Trusted by Parents
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">
+          See why millions choose the 235ml carton for tiffins, sports breaks, and after-dinner cravings.
+        </p>
+</div>
+<!-- Testimonial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="p-8 rounded-xl bg-surface-container-low border border-primary/10 flex flex-col justify-between">
+<div>
+<div class="flex items-center text-primary mb-4">
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+              "The combination of strawberry and rose gives me absolute nostalgia. My children take one in their school lunchboxes every single morning. Delicious and nutritious!"
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md">
+              SN
+            </div>
+<div>
+<p class="text-label-md font-label-md font-bold text-on-surface">Sadia Nadeem</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Mother of Two • Lahore</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-8 rounded-xl bg-surface-container border border-secondary/20 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center text-secondary mb-4">
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+              "Nothing hits the spot after an intense badminton match like an ice-chilled Pakola Strawberry Milk. Real dairy texture without being heavy. 10/10 taste."
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-md">
+              BA
+            </div>
+<div>
+<p class="text-label-md font-label-md font-bold text-on-surface">Bilal Ahmed</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">University Athlete • Karachi</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-8 rounded-xl bg-surface-container-low border border-primary/10 flex flex-col justify-between">
+<div>
+<div class="flex items-center text-primary mb-4">
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+              "Living abroad in Dubai, having a chilled pack sent from home makes my weekend. It is the gold standard of flavoured milk in South Asia."
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md">
+              FK
+            </div>
+<div>
+<p class="text-label-md font-label-md font-bold text-on-surface">Farhan Khan</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Software Architect • Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STORE LOCATOR & WHERE TO BUY ================= -->
+<section class="py-20 bg-gradient-to-b from-background to-surface-container-low relative" id="find-stores">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Callout Banner -->
+<div class="bg-gradient-to-r from-primary to-primary-container rounded-xl p-10 md:p-14 text-on-primary shadow-xl relative overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-surface-container-lowest/10 rounded-full blur-2xl"></div>
+<div class="max-w-2xl relative z-10">
+<span class="px-3.5 py-1 rounded-full bg-on-primary/20 text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider inline-block mb-3">
+            Instant Craving Solution
+          </span>
+<h2 class="text-headline-lg font-headline-lg text-on-primary font-extrabold">
+            Craving a Chilled Pakola Milk Right Now?
+          </h2>
+<p class="text-body-lg font-body-lg text-on-primary/90 mt-3 mb-8">
+            Find Pakola Strawberry and Rose Flavoured Milk at thousands of grocery stores, hypermarkets, and online delivery apps nationwide.
+          </p>
+<!-- Store Search Input -->
+<div class="bg-surface-container-lowest rounded-full p-2 flex flex-col sm:flex-row items-center gap-2 max-w-lg shadow-lg">
+<div class="flex items-center gap-2 pl-4 w-full">
+<span class="material-symbols-outlined text-outline" data-icon="location_on">location_on</span>
+<input class="w-full bg-transparent border-none text-on-surface text-body-sm font-body-sm focus:ring-0 placeholder:text-outline" placeholder="Enter your city or area (e.g. Clifton, DHA, Gulberg)" type="text"/>
+</div>
+<button class="w-full sm:w-auto px-6 py-3 bg-secondary hover:bg-secondary/90 text-on-secondary rounded-full font-label-md text-label-md font-bold whitespace-nowrap transition-all">
+              Locate Stores
+            </button>
+</div>
+</div>
+</div>
+<!-- Supermarket Partners & Quick Delivery -->
+<div class="mt-14">
+<p class="text-center text-label-sm font-label-sm font-bold text-on-surface-variant uppercase tracking-widest mb-6">
+          Available at all Major Retailers &amp; Delivery Partners
+        </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-on-surface hover:border-secondary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">Carrefour</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-on-surface hover:border-secondary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">METRO</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-on-surface hover:border-secondary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">Imtiaz Super</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-on-surface hover:border-secondary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">Chase Up</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-primary hover:border-primary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">Foodpanda</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-surface-container-high text-center font-bold text-secondary hover:border-secondary transition-all shadow-sm">
+<span class="text-label-lg font-label-lg tracking-tight">Blink Mart</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= NEWSLETTER DROPS ================= -->
+<section class="py-12 bg-surface-container border-y border-surface-container-high">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Get Sweet Offers &amp; New Flavor Drops</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Be the first to sample our limited edition holiday batches and seasonal dairy flavours.</p>
+</div>
+<div class="flex w-full md:w-auto items-center gap-2">
+<input class="bg-surface-container-lowest px-5 py-3 rounded-full border border-surface-container-high text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary w-full md:w-80" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-6 py-3 rounded-full font-label-md text-label-md font-bold whitespace-nowrap transition-all shadow-md">
+          Subscribe
+        </button>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<footer class="w-full rounded-t-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Brand & Mission -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-2">
+<span class="text-headline-md font-headline-md font-extrabold text-secondary">Pakola</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm">
+          © 2025 Pakola Flavoured Milk. Pure refreshment crafted with heritage since 1950. All rights reserved.
+        </p>
+</div>
+<!-- Links Cluster -->
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+          Sustainability Pledge
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#find-stores">
+          Store Locator
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#nutrition">
+          Nutrition Facts
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+          FAQ
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+          Contact Us
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+          Privacy Policy
+        </a>
+</nav>
+<!-- Trailing Certifications & Social Icons -->
+<div class="flex items-center gap-4 text-on-surface-variant">
+<a aria-label="Store locator map" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</a>
+<a aria-label="Nutritional guide" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+</a>
+<a aria-label="Official Website" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="language">language</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

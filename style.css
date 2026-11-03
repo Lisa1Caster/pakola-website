@@ -1,0 +1,325 @@
+/* ==========================================================================
+   PAKOLA FLAVOURED MILK — FULL HD SCROLL ANIMATION & MODERN DESIGN SYSTEM
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fff8f8;
+  color: #25181c;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #d82036;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b10024;
+}
+
+/* ==========================================================================
+   TRANSPARENT NAVIGATION BAR (PERMANENTLY TRANSPARENT ACROSS FULL WEBSITE)
+   ========================================================================== */
+.navbar-transparent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #25181c;
+  text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #b10024;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #b10024;
+  border-radius: 9999px;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #25181c;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(177, 0, 36, 0.06);
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: block;
+}
+
+.mobile-nav-link:hover {
+  color: #b10024;
+  padding-left: 0.4rem;
+}
+
+/* Ensure smooth scrolling target offsets so sections aren't obscured by fixed navbar */
+#flavours, #nutrition, #heritage, #find-stores, #animation-section {
+  scroll-margin-top: 75px;
+}
+
+/* ==========================================================================
+   SCROLL ANIMATION PINNED SECTION (FULL HD 1080P)
+   ========================================================================== */
+.animation-section {
+  position: relative;
+  width: 100%;
+  height: 450vh; /* Smooth scrubbing pacing for 283 frames */
+  background-color: #ca687d;
+  z-index: 20;
+}
+
+.canvas-sticky-wrap {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ca687d;
+  background: radial-gradient(circle at center, #f5d3d9 0%, #df8195 50%, #ca687d 100%);
+}
+
+#sequence-canvas {
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  object-fit: cover;
+  display: block;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ==========================================================================
+   ANIMATION HERO HEADER OVERLAY (PAKOLA - THE TASTE OF PAKISTAN)
+   ========================================================================== */
+.anim-hero-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  pointer-events: none;
+  z-index: 15;
+  transition: opacity 0.1s linear, transform 0.1s linear;
+  will-change: opacity, transform;
+}
+
+.anim-hero-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(3.2rem, 7.5vw, 6.2rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: #b10024;
+  text-shadow: 0 4px 28px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.anim-hero-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b10024;
+  padding: 0.45rem 1.6rem;
+  background: rgba(255, 240, 243, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(177, 0, 36, 0.25);
+  border-radius: 9999px;
+  box-shadow: 0 6px 24px rgba(177, 0, 36, 0.15), 0 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Floating Scroll Indicator */
+.scroll-cue {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1.4rem;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 9999px;
+  color: #ffffff;
+  pointer-events: none;
+  box-shadow: 0 8px 32px rgba(177, 0, 36, 0.15);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.scroll-cue-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-cue-icon {
+  font-size: 1.25rem !important;
+  line-height: 1;
+  animation: bounceDown 1.8s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+/* ==========================================================================
+   FAST MINIMAL PRELOADER
+   ========================================================================== */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #ca687d;
+  background: radial-gradient(circle at center, #f5d3d9 0%, #df8195 50%, #ca687d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.loader-num {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.loader-track {
+  width: 160px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.loader-bar {
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  transition: width 0.08s ease-out;
+}
+
+/* ==========================================================================
+   STITCH COMPONENT UTILITY STYLES
+   ========================================================================== */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.creamy-glow {
+  box-shadow: 0 16px 40px -8px rgba(216, 32, 54, 0.12), 0 0 0 1px rgba(216, 32, 54, 0.05);
+}
+
+.emerald-glow {
+  box-shadow: 0 14px 32px -6px rgba(10, 109, 62, 0.18);
+}
+
+.product-shadow {
+  filter: drop-shadow(0 20px 24px rgba(177, 0, 36, 0.15)) drop-shadow(0 8px 12px rgba(10, 109, 62, 0.1));
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
